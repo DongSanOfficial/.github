@@ -95,8 +95,7 @@
 
 | 용어  | 설명 | 비고 |
 | --- | --- | --- |
-| name (북마크 이름) | 사용자가 지정한 북마크의 고유한 이름
-(사용자 범위 내 유일) | 1~255자 |
+| name (북마크 이름) | 사용자가 지정한 북마크의 고유한 이름(사용자 범위 내 유일) <br>  1~255자 |
 | 사용자 ID | 북마크 소유자의 식별자 |  |
 | 산책로 ID | 북마크에 포함되는 산책로의 식별자 |  |
 
@@ -304,21 +303,13 @@
 
 | 용어 | 설명 | 비고 |
 | --- | --- | --- |
-| name | 크루 이름 | 1~20자,
-중복 불가,
-필수 값 |
-| description | 크루 소개글 | 0~250자, 필수 아님 |
-| rule | 크루 규칙 | 0~250자, 필수 아님 |
+| name | 크루 이름 | 1~20자  <br> 중복 불가  <br> 필수 값 |
+| description | 크루 소개글 | 0~250자  <br>  필수 아님 |
+| rule | 크루 규칙 | 0~250자  <br>  필수 아님 |
 | crewImageUrl | 크루 대표 사진 | 필수 아님 |
-| crewType | 크루의 공개 여부 설정 | 공개 : `PUBLIC`
-비공개 : `PRIVATE`
-필수 값 |
-| password | 비공개 크루 가입을 위한 비밀번호 | 8~20자, 해싱 저장
-PRIVATE 크루 이면 필수 입력
-PUBLIC 크루이면 null |
-| capacityType | 크루 가입 인원 제한 여부 | 무제한 : `LIMITED`, 
-제한 : `UNLIMITED`
-필수 값 |
+| crewType | 크루의 공개 여부 설정 | 공개 : `PUBLIC`  <br> 비공개 : `PRIVATE`  <br>  필수 값 |
+| password | 비공개 크루 가입을 위한 비밀번호 | 8~20자 <br>  해싱 저장  <br>  PRIVATE 크루 이면 필수 입력  <br> PUBLIC 크루이면 null |
+| capacityType | 크루 가입 인원 제한 여부 | 무제한 : `LIMITED`  <br> 제한 : `UNLIMITED` <br> 필수 값 |
 | memberLimit | 가입 인원 제한 시(capacity_type = LIMITED) 최대 가입 가능 인원 | 2~100명 |
 | role | 크루 내 역할 | `MANAGER`, `PARTICIPANT` |
 - PUBLIC(공개) 크루는 누구나 크루 정보, 게시글, 활동 내역을 조회할 수 있다.
@@ -435,9 +426,7 @@ PUBLIC 크루이면 null |
 
 | 용어 | 설명 | 비고 |
 | --- | --- | --- |
-| capacityType | 인원 제한 여부 | 무제한 : `LIMITED`, 
-제한 : `UNLIMITED`
-필수 값 |
+| capacityType | 인원 제한 여부 | 무제한 : `LIMITED` <br> 제한 : `UNLIMITED` <br> 필수 값 |
 | memberLimit | 가입 인원 제한 시(capacity_type = LIMITED) 최대 가입 가능 인원 | 2~100명 |
 | date | 산책 예정 날짜 | LocalDate |
 | time | 산책 예정 시간 | LocalTime |
@@ -502,8 +491,7 @@ PUBLIC 크루이면 null |
 | key  | value | 비고 |
 | --- | --- | --- |
 | size | 한 페이지에 가져올 데이터 수 | 기본 값 : 10 |
-| lastId | 마지막으로 조회된 항목의 ID (커서 역할) | 첫 페이지 : 경우 전달하지 않음,
-다음 페이지 요청 시 : 마지막으로 받은 데이터의 ID를 전달 |
+| lastId | 마지막으로 조회된 항목의 ID (커서 역할) | 첫 페이지 : 경우 전달하지 않음  <br> 다음 페이지 요청 시 : 마지막으로 받은 데이터의 ID를 전달 |
 
 **응답 형식**
 
@@ -512,7 +500,6 @@ PUBLIC 크루이면 null |
   "data": [
     {},
     {},
-    ...
   ],
   "hasNext": true
 }
